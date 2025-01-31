@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #29323c;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.form-box {
+    position: relative;
+    width: 600px;
+    height: 800px;
+    border: 2px solid crimson;
+    backdrop-filter: blur(15px);
+    background: #29323c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(255, 0, 0, 0.3);
+}
+
+.form-box h2 {
+    color: crimson;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 8px rgba(113, 111, 111, 0.7);
+}
+
+.form-box .input-box {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid crimson;
+}
+
+.form-box .input-box input {
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 20px 0 5px;
+    color: white;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: rgb(213, 197, 200);
+    opacity: 0.8;
+}
+
+.button input {
+    color: white;
+    background-color: crimson;
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button input:hover {
+    background-color: darkred;
+    transform: scale(1.05);
+}
+
+.group {
+    display: flex;
+    justify-content: space-around;
+    width: 310px;
+    gap: 20%;
+    margin-top: 10%;
+}
+
+.group a {
+    color: crimson;
+    top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.text-center {
+    color: white;
+    text-align: center;
+}
+
+.group a:hover {
+    text-decoration: underline;
+}
+
+#result {
+    color: crimson;
+    font-weight: 600;
+    position: relative;
+    top: 25px;
+    text-align: center;
+}
+
+.container1 h1 {
+    color: crimson;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+    background: transparent;
+}
+
+.welcome-message {
+    color: crimson;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.welcome-message span {
+    color: white;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .form-box {
+        width: 450px;
+        height: 650px;
+        padding: 20px;
+    }
+
+    .form-box h2 {
+        font-size: 2rem;
+    }
+
+    .form-box .input-box {
+        width: 260px;
+    }
+
+    .button input {
+        font-size: 16px;
+    }
+
+    .group {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+@media (min-width: 480px) {
+    .form-box {
+        max-width: 400px;
+        min-height: 300px;
+        padding: 15px;
+        border-radius: 10px;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .form-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-box .input-box {
+        width: 100%;
+    }
+
+    .form-box .input-box input {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .button input {
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .group {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+}
+
+
+/* @media (min-width: 480px) {
+    .form-box {
+        width: 100%;
+        height:70vh;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .form-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-box .input-box {
+        width: 100%;
+    }
+
+    .form-box .input-box input {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .button input {
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .group {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+} */
+
+/* @media (min-width: 1200px) {
+    .form-box {
+        width: 700px;
+        height: 800px;
+    }
+
+    .form-box h2 {
+        font-size: 3rem;
+    }
+
+    .form-box .input-box {
+        width: 350px;
+    }
+
+    .button input {
+        font-size: 20px;
+    }
+} */
+@media (min-width: 1200px) {
+    .form-box {
+        width: 700px; /* Fixed width for large screens */
+        min-height: 70vh; /* Use min-height to allow dynamic scaling */
+        height: auto; /* Allow the height to grow based on content */
+        padding: 40px; /* Add more padding for better spacing */
+    }
+
+    .form-box h2 {
+        font-size: 3rem; /* Larger font size for headings */
+    }
+
+    .form-box .input-box {
+        width: 350px; /* Wider input boxes for better usability */
+    }
+
+    .button input {
+        font-size: 20px; /* Larger font size for buttons */
+        height: 50px; /* Slightly taller buttons for better clickability */
+    }
+}

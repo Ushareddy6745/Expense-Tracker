@@ -1,0 +1,155 @@
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Times New Roman', Times, serif
+}
+  
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#29323c ;
+    height: 100vh;
+
+  }
+  .container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#29323c ;
+    background: transparent;
+
+  }
+
+
+  .container {
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid crimson; 
+      position: relative;
+      width: 600px;
+      height: 800px;
+      background: #29323c ; 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(255, 0, 0, 0.3); 
+  }
+  
+  
+  .welcome-message {
+    color: crimson;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); 
+  }
+  
+  .welcome-message span {
+    color: white;
+  }
+  
+ 
+  h1 {
+    color: crimson; 
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+.mb-3 input ::placeholder{
+    color:aliceblue; 
+    
+
+}
+
+  
+ 
+  .form-control {
+    background:#29323c ; 
+    color: white;
+    border: 2px solid crimson; 
+    border-radius: 5px;
+    box-shadow: none;
+  }
+  
+  .form-control:focus {
+    border-color: crimson; 
+    box-shadow: 0 0 5px crimson;
+  }
+
+  .container .mb-3 input {
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 20px 0 5px;
+    color: white; 
+    font-size: 16px;
+  }
+  
+  .container .mb-3{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid crimson;
+}
+
+
+  .btn-primary {
+    background-color: crimson;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: darkred;
+    box-shadow: 0 0 10px crimson; 
+  }
+  
+ 
+  a {
+    color: crimson;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  p {
+    color: white;
+    text-align: center;
+  }
+  h2.text-center {
+    color: crimson; 
+    font-size: 2.5rem;
+    font-weight: bold; 
+    text-align: center; 
+    margin-bottom: 20px;
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    text-shadow: 2px 2px 8px rgba(247, 190, 190, 0.7); 
+  }
+  
+  /* Responsive Heading */
+  @media (max-width: 768px) {
+    h1.text-center {
+      font-size: 2rem; 
+    }
+  }
+  
+  
+  
